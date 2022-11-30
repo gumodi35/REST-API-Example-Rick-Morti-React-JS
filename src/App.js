@@ -1,16 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import { useState, useEffect } from "react";
-//import  { Card } from "./components/Card";
+import  { Card } from "./components/Card/Card";
 //import { Filter } from "./components/Filter";
 //import { Navbar } from "./components/Navbar";
 //import { Pagination } from "./components/Pagination";
 //import { Search } from "./components/Search";
 
+
 function App() {
 
-  const [apidata, setapidate] = useState([]);
-  const { infodata, resultsdata } = apidata;
+  const [fetchedData, updateFetchData] = useState([]);
+  const { info, results } = fetchedData;
   const api = `https://rickandmortyapi.com/api/character/?page=2`;
 
   useEffect(() => {
@@ -18,24 +19,26 @@ function App() {
       const data = await fetch(api)
       .then((res) => 
       res.json());
-      setapidate(data);
+      updateFetchData(data);
     })();
   }, [api]);
 
   return (
-    <div className="App">
+    <>
+    <div className="App" >
      <h1 className="text-center mb-3">Personajes</h1>
-     <div className="container">
-      <div className="row">
-        Componente Card puede colocarse aqui
-      <div className="col-lg-8 col-12">
-        <div className="row">
+     <div className="container" >
+      <div className="row" >
           Componente Filter puede colocarse aqui
+      <div className="col-lg-8 col-12" >
+        <div className="row" >
+        <Card results={results} />
         </div>
       </div>
       </div>
      </div>
     </div>
+    </>
   );
 }
 
