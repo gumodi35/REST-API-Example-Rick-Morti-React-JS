@@ -5,14 +5,18 @@ import  { Card } from "./components/Card/Card";
 //import { Filter } from "./components/Filter";
 //import { Navbar } from "./components/Navbar";
 //import { Pagination } from "./components/Pagination";
-//import { Search } from "./components/Search";
+import { Search } from "./components/Search/Search";
+import "./components/Search/Search.module.scss";
 
 
 function App() {
 
   const [fetchedData, updateFetchData] = useState([]);
+  const [pageNumber, updatePageNumber] = useState(1);
+  const [search, setSearch] = useState("");
   const { info, results } = fetchedData;
-  const api = `https://rickandmortyapi.com/api/character/?page=2`;
+  const api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
+
 
   useEffect(() => {
     (async () => {
@@ -27,6 +31,7 @@ function App() {
     <>
     <div className="App" >
      <h1 className="text-center mb-3">Personajes</h1>
+     <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
      <div className="container" >
       <div className="row" >
           Componente Filter puede colocarse aqui
