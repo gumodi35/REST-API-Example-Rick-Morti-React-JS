@@ -1,0 +1,14 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .pagination {font-size: 12px;}
+
+    .next,
+    .prev {display: none;}
+}
+@media (min-width: 768px) {
+    .pagination {font-size: 14px;}
+}
+    
