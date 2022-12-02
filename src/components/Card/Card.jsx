@@ -1,5 +1,3 @@
-//import { Link } from 'react-router-dom';
-//import { Link } from 'react-router-dom';
 import styles from './Card.module.scss';
 
 const Card = ({ results }) => {

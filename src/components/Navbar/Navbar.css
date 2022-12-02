@@ -1,0 +1,6 @@
+button[aria-expanded="false"] > .close {
+    display: none;
+  }
+  button[aria-expanded="true"] > .open {
+    display: none;
+  }
