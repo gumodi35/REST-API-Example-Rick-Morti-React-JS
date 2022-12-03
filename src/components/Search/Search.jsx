@@ -21,7 +21,7 @@ const Search = ({ setSearch, updatePageNumber }) => {
         />
         <button
           onClick={searchBtn}
-          className={`${styles.btn} btn btn-primary fs-5`}
+          className={`${styles.btn} btn btn-success fs-5`}
         >
           Search
         </button>
