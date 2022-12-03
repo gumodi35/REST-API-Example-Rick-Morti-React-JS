@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CardDetails } from "./components/Card/CardDetails";
 import "./components/Search/Search.module.scss";
 
+
 function App() {
   return (
     <Router>

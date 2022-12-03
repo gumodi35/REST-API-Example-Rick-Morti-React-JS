@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
       <div className="container" style={styles}>
         <Link to="/" className="navbar-brand fs-3 ubuntu">
-          Rick & Morty <span className="text-primary">Personajes</span>
+          Rick & Morty <span >Personajes</span>
         </Link>
   
         <button

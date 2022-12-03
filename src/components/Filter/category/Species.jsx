@@ -5,14 +5,14 @@ const Species = ({ updateSpecies, updatePageNumber }) => {
     "Human",
     "Alien",
     "Humanoid",
-    "Mythological",
-    "Animal",
-    "Robot",
     "Poopybutthole",
+    "Mythological",
+    "Unknown",
+    "Animal",
     "Disease",
+    "Robot",
     "Cronenberg",
     "Planet",
-    "Unknown",
   ];
   return (
     <div className="accordion-item">

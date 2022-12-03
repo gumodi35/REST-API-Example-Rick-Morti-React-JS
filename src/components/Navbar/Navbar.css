@@ -4,3 +4,9 @@ button[aria-expanded="false"] > .close {
   button[aria-expanded="true"] > .open {
     display: none;
   }
+  span {
+    color: #0ff807;
+  }
+  .active {
+    color: #0ff807;
+  }
