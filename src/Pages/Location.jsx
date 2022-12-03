@@ -41,7 +41,7 @@ const Location = () => {
     </div>
     <div className="row">
       <div className="col-lg-3 col-12 mb-4">
-        <h4 className="text-center mb-4">Elije Lugar</h4>
+        <h4 className="text-center mb-4">Elije Mundo</h4>
         <InputGroup name="Location" changeID={setNumber} total={126} />
       </div>
       <div className="col-lg-8 col-12">

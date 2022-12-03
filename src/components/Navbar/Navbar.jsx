@@ -28,17 +28,17 @@ const Navbar = () => {
         >
           <div className="navbar-nav fs-5">
             <NavLink className="nav-link" to="/" >
-              Characters
+              Personajes
             </NavLink>
             <NavLink className="nav-link" to="/episodes" >
-              Episode
+              Episodios
             </NavLink>
             <NavLink
               activclassname="active"
               className="nav-link"
               to="/location"
             >
-              Location
+              Mundos
             </NavLink>
           </div>
         </div>
